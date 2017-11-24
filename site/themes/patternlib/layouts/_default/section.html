@@ -1,0 +1,22 @@
+{{ define "main" }}
+<main class="container">
+	<div class="row">
+		<div class="col-xs-12 txt--xxs text-right">section.html</div>
+	</div>
+	<div class="row">	
+		<div class="col-xs-12 col-sm-3">
+			<h2>{{ .Title }}</h2>
+		</div>
+		<div class="col-xs-12 col-sm-9">
+			<ul class="contents">
+				{{ range .Paginator.Pages }}
+				<li>
+					<a href="{{ .Permalink }}">{{ .Title }}</a>
+					<p>{{ .Params.desc }}</p>
+				</li>
+				{{ end }}
+			</ul>
+		</div>
+	</div>
+</main>
+{{ end }}

@@ -1,0 +1,296 @@
+$xs: 0.5rem;
+$sm: 1rem;
+$md: 3rem;
+$lg: 6rem;
+$xl: 10rem;
+
+.pad {
+    @include e('demo') {
+        display: inline-block;
+        background-color: #888;
+        color: #fff;
+        margin: 1rem;
+    }
+
+    @include m('xs') {
+        padding: $xs;
+    }
+    @include m('sm') {
+        padding: $sm;
+    }
+    @include m('md') {
+        padding: $md;
+    }
+    @include m('lg') {
+        padding: $lg;
+    }
+    @include m('xl') {
+        padding: $xl;
+    }
+
+    @include m('h') {
+        @include m('xs') {
+            padding-left: $xs;
+            padding-right: $xs;
+        }
+        @include m('sm') {
+            padding-left: $sm;
+            padding-right: $sm;
+        }
+        @include m('md') {
+            padding-left: $md;
+            padding-right: $md;
+        }
+        @include m('lg') {
+            padding-left: $lg;
+            padding-right: $lg;
+        }
+        @include m('xl') {
+            padding-left: $xl;
+            padding-right: $xl;
+        }
+    }
+
+    @include m('v') {
+        @include m('xs') {
+            padding-top: $xs;
+            padding-bottom: $xs;
+        }
+        @include m('sm') {
+            padding-top: $sm;
+            padding-bottom: $sm;
+        }
+        @include m('md') {
+            padding-top: $md;
+            padding-bottom: $md;
+        }
+        @include m('lg') {
+            padding-top: $lg;
+            padding-bottom: $lg;
+        }
+        @include m('xl') {
+            padding-top: $xl;
+            padding-bottom: $xl;
+        }
+    }
+
+    @include m('top') {
+        @include m('xs') {
+            padding-top: $xs;
+        }
+        @include m('sm') {
+            padding-top: $sm;
+        }
+        @include m('md') {
+            padding-top: $md;
+        }
+        @include m('lg') {
+            padding-top: $lg;
+        }
+        @include m('xl') {
+            padding-top: $xl;
+        }
+    }
+
+    @include m('bottom') {
+        @include m('xs') {
+            padding-bottom: $xs;
+        }
+        @include m('sm') {
+            padding-bottom: $sm;
+        }
+        @include m('md') {
+            padding-bottom: $md;
+        }
+        @include m('lg') {
+            padding-bottom: $lg;
+        }
+        @include m('xl') {
+            padding-bottom: $xl;
+        }
+    }
+
+    @include m('left') {
+        @include m('xs') {
+            padding-left: $xs;
+        }
+        @include m('sm') {
+            padding-left: $sm;
+        }
+        @include m('md') {
+            padding-left: $md;
+        }
+        @include m('lg') {
+            padding-left: $lg;
+        }
+        @include m('xl') {
+            padding-left: $xl;
+        }
+    }
+
+    @include m('right') {
+        @include m('xs') {
+            padding-right: $xs;
+        }
+        @include m('sm') {
+            padding-right: $sm;
+        }
+        @include m('md') {
+            padding-right: $md;
+        }
+        @include m('lg') {
+            padding-right: $lg;
+        }
+        @include m('xl') {
+            padding-right: $xl;
+        }
+    }
+}
+
+.margin {
+    @include e('demo') {
+        @include m('outer') {
+            display: inline-block;
+            background-color: #ccc;
+            margin: 1rem;
+        }
+        @include m('inner') {
+            background-color: #888;
+            color: #eee;
+        }
+    }
+
+    @include m('xs') {
+        margin: $xs;
+    }
+    @include m('sm') {
+        margin: $sm;
+    }
+    @include m('md') {
+        margin: $md;
+    }
+    @include m('lg') {
+        margin: $lg;
+    }
+    @include m('xl') {
+        margin: $xl;
+    }
+
+    @include m('h') {
+        @include m('xs') {
+            margin-left: $xs;
+            margin-right: $xs;
+        }
+        @include m('sm') {
+            margin-left: $sm;
+            margin-right: $sm;
+        }
+        @include m('md') {
+            margin-left: $md;
+            margin-right: $md;
+        }
+        @include m('lg') {
+            margin-left: $lg;
+            margin-right: $lg;
+        }
+        @include m('xl') {
+            margin-left: $xl;
+            margin-right: $xl;
+        }
+    }
+
+    @include m('v') {
+        @include m('xs') {
+            margin-top: $xs;
+            margin-bottom: $xs;
+        }
+        @include m('sm') {
+            margin-top: $sm;
+            margin-bottom: $sm;
+        }
+        @include m('md') {
+            margin-top: $md;
+            margin-bottom: $md;
+        }
+        @include m('lg') {
+            margin-top: $lg;
+            margin-bottom: $lg;
+        }
+        @include m('xl') {
+            margin-top: $xl;
+            margin-bottom: $xl;
+        }
+    }
+
+    @include m('top') {
+        @include m('xs') {
+            margin-top: $xs;
+        }
+        @include m('sm') {
+            margin-top: $sm;
+        }
+        @include m('md') {
+            margin-top: $md;
+        }
+        @include m('lg') {
+            margin-top: $lg;
+        }
+        @include m('xl') {
+            margin-top: $xl;
+        }
+    }
+
+    @include m('bottom') {
+        @include m('xs') {
+            margin-bottom: $xs;
+        }
+        @include m('sm') {
+            margin-bottom: $sm;
+        }
+        @include m('md') {
+            margin-bottom: $md;
+        }
+        @include m('lg') {
+            margin-bottom: $lg;
+        }
+        @include m('xl') {
+            margin-bottom: $xl;
+        }
+    }
+
+    @include m('left') {
+        @include m('xs') {
+            margin-left: $xs;
+        }
+        @include m('sm') {
+            margin-left: $sm;
+        }
+        @include m('md') {
+            margin-left: $md;
+        }
+        @include m('lg') {
+            margin-left: $lg;
+        }
+        @include m('xl') {
+            margin-left: $xl;
+        }
+    }
+
+    @include m('right') {
+        @include m('xs') {
+            margin-right: $xs;
+        }
+        @include m('sm') {
+            margin-right: $sm;
+        }
+        @include m('md') {
+            margin-right: $md;
+        }
+        @include m('lg') {
+            margin-right: $lg;
+        }
+        @include m('xl') {
+            margin-right: $xl;
+        }
+    }
+}

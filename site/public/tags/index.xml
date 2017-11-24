@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on pattern library</title>
+    <link>http://example.org/tags/</link>
+    <description>Recent content in Tags on pattern library</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Buttons</title>
+      <link>http://example.org/tags/buttons/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/buttons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forms</title>
+      <link>http://example.org/tags/forms/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/forms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Input Types</title>
+      <link>http://example.org/tags/input-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/input-types/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Secondary</title>
+      <link>http://example.org/tags/secondary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/secondary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ui</title>
+      <link>http://example.org/tags/ui/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/ui/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

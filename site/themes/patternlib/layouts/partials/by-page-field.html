@@ -1,0 +1,13 @@
+<!-- ***************************** currently unused ********************************* -->
+{{ range .Data.Pages.GroupByParam "category" }}
+<h4>by-page-field.html</h4>
+<h3>{{ .Key }}</h3>
+<p>{{ .Summary }}</p>
+<ul>
+    {{ range .Pages }}
+    <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}

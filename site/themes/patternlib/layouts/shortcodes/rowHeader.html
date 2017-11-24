@@ -1,0 +1,9 @@
+{{ $columns := split (.Get "cols") "," }}
+{{ $labels := split (.Get "labels") "," }}
+
+<div class="row pad--v--sm">
+    {{ range $i, $col := $columns -}}
+    <div class="col-xs-{{ $col }}"><h4>{{ index $labels $i }}</h4></div>
+    {{- end }}
+</div>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pattern library</title>
+    <link>http://example.org/</link>
+    <description>Recent content on pattern library</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Block button</title>
+      <link>http://example.org/buttons/button-block/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/buttons/button-block/</guid>
+      <description>Button</description>
+    </item>
+    
+    <item>
+      <title>Secondary button</title>
+      <link>http://example.org/buttons/button-secondary/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/buttons/button-secondary/</guid>
+      <description>Button</description>
+    </item>
+    
+    <item>
+      <title>Small button</title>
+      <link>http://example.org/buttons/button-small/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/buttons/button-small/</guid>
+      <description>Button</description>
+    </item>
+    
+    <item>
+      <title>Standard buttons</title>
+      <link>http://example.org/buttons/button-default/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/buttons/button-default/</guid>
+      <description>Button</description>
+    </item>
+    
+    <item>
+      <title>Standard form submit button</title>
+      <link>http://example.org/buttons/button-formsubmit/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/buttons/button-formsubmit/</guid>
+      <description>Submit</description>
+    </item>
+    
+    <item>
+      <title>Information popover</title>
+      <link>http://example.org/ui/popovers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/ui/popovers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Input fields</title>
+      <link>http://example.org/forms/forms-inputs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/forms/forms-inputs/</guid>
+      <description>Some form fields</description>
+    </item>
+    
+    <item>
+      <title>Main content wrappers</title>
+      <link>http://example.org/wrappers/content-wrappers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/wrappers/content-wrappers/</guid>
+      <description>How to wrap up content</description>
+    </item>
+    
+    <item>
+      <title>a post</title>
+      <link>http://example.org/posts/biddly/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/biddly/</guid>
+      <description>biddly</description>
+    </item>
+    
+  </channel>
+</rss>

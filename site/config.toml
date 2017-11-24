@@ -1,0 +1,8 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "pattern library"
+theme = "patternlib"
+sectionPagesMenu = "sectionMenu"
+enableGitInfo = true
+[params]
+	description = "medichecks pattern library"

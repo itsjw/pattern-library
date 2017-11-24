@@ -1,0 +1,9 @@
+/** General styles that apply to the entire website **/
+*:focus {
+    outline: none;
+    outline-style: none;
+}
+*:active:focus {
+    outline: none;
+    outline-style: none;
+}

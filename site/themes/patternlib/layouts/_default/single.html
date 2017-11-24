@@ -1,0 +1,32 @@
+{{ define "main" -}}
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 txt--xxs text-right txt--whisper">single.html</div>
+	</div>
+	<article class="row">
+		<div class="col-xs-12 col-sm-3">
+			<h2 class="panel__title">{{ .Title }}</h2>
+		  	<p class="txt--xxs txt--whisper">Last updated: {{ .Lastmod.Format "Mon, Jan 2, 2006" }}</p>
+		  	<div class="margin--bottom--md">
+		    	{{ .Params.desc }}
+		    </div>
+
+		  	{{ with .Params.tags }}
+		  	<div class="margin--bottom--md">
+			  	<h4>Tags</h4>
+				<ul class="tags">
+					{{ range . }}
+					<li> <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+					{{ end }}
+				</ul>				
+			</div>
+			{{ end }}
+		</div>
+		<div class="col-xs-12 col-sm-9">			
+			<main class="content">
+				{{ .Content }}
+		    </main>
+		</div>
+	</article>
+</div>
+{{- end }}

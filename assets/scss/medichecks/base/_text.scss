@@ -1,0 +1,122 @@
+html,body {
+	font-family: "Montserrat", sans-serif, "Helvetica Neue", Helvetica, Arial;
+	font-size: 16px;
+	// line-height: 1.42857;
+	color: $clrTextDefault;
+}
+
+
+/*******************/
+/*** Text sizing ***/
+/*******************/
+
+/** Content text sizes **/
+.txt {
+	@include m('xxs') {
+		@include font-size(12px);
+	}
+	@include m('xs') {
+		@include font-size(14px);
+	}
+	@include m('sm') {
+		@include font-size(16px);
+	}
+	@include m('md') {
+		@include font-size(18px);
+	}
+	@include m('lg') {
+		@include font-size(24px);
+	}
+	@include m('xl') {
+		@include font-size(32px);
+	}
+	@include m('xxl') {
+		@include font-size(45px);
+	}
+}
+
+/*************************/
+/** Text types *********/
+/*********************/
+
+.txt {
+	@include m('bold') {
+		font-weight: 600;
+	}
+
+	// Use for low priority copy
+	@include m('whisper') {
+		color: $clrTextWhisper;
+	}
+
+	// For presenting a snippet of information within a 
+	// block of copy, used to break it up and make it
+	// more readable.
+	@include m('crossHead') {
+		border-top: 1px solid $clrDivider;
+		border-bottom: 1px solid $clrDivider;
+
+		padding: 1rem;
+		margin: 2rem 5%;
+
+		text-align: center;
+
+		color: $clrBlack;
+		@extend .txt--lg;
+	}
+}
+
+
+
+/*********************/
+/** Text colours ***/
+/*****************/
+
+.txt {
+	// Brand colour 1
+	@include m('pink') {
+		color: $clrBrand1;
+
+		@include m('light') {
+			color: $clrBrand1Light;
+		}
+		@include m('dark') {
+			color: $clrBrand1Dark;
+		}
+	}
+
+	// Brand colour 2
+	@include m('blue') {
+		color: $clrBrand2;
+
+		@include m('light') {
+			color: $clrBrand2Light;
+		}
+		@include m('dark') {
+			color: $clrBrand2Dark;
+		}
+	}
+
+	// Brand colour 3
+	@include m('green') {
+		color: $clrBrand3;
+
+		@include m('light') {
+			color: $clrBrand3Light;
+		}
+		@include m('dark') {
+			color: $clrBrand3Dark;
+		}
+	}
+
+
+	@include m('black') {
+		color: $clrBlack;
+	}
+	@include m('white') {
+		color: $clrWhite;
+	}
+	@include m('green') {
+		color: $clrBrand3;
+	}
+}

@@ -1,0 +1,147 @@
+/** Structure and layout **/
+.btn {
+    border-radius: 25px;
+    border-width: 0.2rem;
+    border-style: none;
+    min-width: 100px;
+    max-width: 300px;
+    white-space: normal;
+    padding: 1rem 1.25rem;
+
+    &:before {
+        float: left;
+    }
+
+    &:hover {
+        border-radius: 22px; 
+    }
+
+    @include m('submit') {
+        min-width: 230px;
+    }
+
+    @include m('small') {
+        min-width: initial;
+        border-radius: 18px;
+        padding: 0.5rem 1.5rem;
+
+        &:hover {
+            border-radius: 15px;
+        }
+    }
+
+    @include m('block') {
+        display: block;
+        width: 100%;
+    }
+
+    /** Icons **/
+    svg {        
+        height: 1rem;        
+    }
+}
+
+/** Feedback **/
+.btn {
+    transition: box-shadow 0.4s, border-radius 0.2s, background-color 0.4s, color 0.4s;
+    
+    &:hover {
+        transition: box-shadow 0.1s, border-radius 0.05s, background-color 0.05s, color 0.05s;
+    }
+
+    &:focus {
+        text-decoration: underline;
+        box-shadow: 0px 0px 6px 2px rgba(126,20,65,0.3);    
+    }
+}
+
+/** Colours **/
+.btn {
+    background-color: $clrBrand1;
+    color: $colorWhite;
+
+    &:hover {
+        background-color: lighten($clrBrand1, 10%);
+        color: $colorWhite;
+    }
+
+    &:active, &:focus {
+        color: $colorWhite;
+    }
+
+    @include m('secondary') {
+        background-color: $colorWhite;        
+        border-style: solid;
+        border-color: $clrBrand1;
+        color: $clrBrand1;
+
+        &:active, &:focus {
+            color: $colorBlack;
+        }
+    }
+
+    @include m('blue') {
+        background-color: $clrBrand2;
+        &:hover {
+            background-color: lighten($clrBrand2, 15%); 
+        }
+        @include m('secondary') {
+            border-color: $clrBrand2;
+            background-color: $colorWhite;
+            color: $clrBrand2;
+        }
+    }
+
+    @include m('disabled') {
+        background-color: $colorDisabledDark;
+        color: $colorDisabledLight;
+        pointer-events: none;
+
+        &:hover {
+            background-color: $colorDisabledDark;
+            color: $colorDisabledLight;
+        }
+    }
+    &:disabled {
+        background-color: $colorDisabledDark;
+        color: $colorDisabledLight;
+
+        &:hover {
+            background-color: $colorDisabledDark;
+        }
+    }
+
+}
+
+/** Effects **/
+.btn {
+    box-shadow: 0px 3px 3.8px 0.2px rgba(0, 0, 0, 0.3);
+}
+
+/** Textlink **/
+.btn {
+    @include m('text') {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        transition: color 0.4s;
+
+        &:focus,
+        &:hover {
+            color: $clrBrand1;
+            text-decoration: underline;
+            transition: color 0.05s;
+        }
+
+        @include m('blue') {
+            color: $clrBrand2;
+        }
+    }
+}
+
+/** Exceptions **/
+.listTable {
+    .btn {
+        font-size: 1rem; 
+    }
+}

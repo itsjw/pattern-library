@@ -1,0 +1,41 @@
+// Note: colour variables all start clr
+
+/***********************/
+/*** Brand colours ***/
+/*******************/
+
+// Medichecks pink
+$clrBrand1: #ff286e;
+$clrBrand1Light: lighten($clrBrand1, 15%);
+$clrBrand1Dark: darken($clrBrand1, 20%); 
+
+// Medichecks blue
+$clrBrand2: #1e82ff;
+$clrBrand2Light: lighten($clrBrand2, 15%);
+$clrBrand2Dark: darken($clrBrand2, 30%);
+
+// Medichecks green
+$clrBrand3: #00e682;
+$clrBrand3Light: lighten($clrBrand3, 10%);
+$clrBrand3Dark: darken($clrBrand3, 30%);
+
+// Default colours
+$clrTextDefault: #636b6f;
+$clrBlack: #212121;
+$clrWhite: #ffffff;
+$clrTextWhisper: #cecece;
+
+// Visual elements
+$clrDivider: #eeeeee;
+
+// Links 
+$clrLinkDefault: $clrBrand1;
+$clrLinkDefaultHover: darken($clrBrand1, 20%); 
+
+// Shades of grey
+$clrGrey10: #888;
+$clrGrey20: #aaa;
+$clrGrey30: #ddd;
+$clrGrey40: #eee;
+$clrGrey50: #f0f0f0;
+$clrGrey60: #f0f3f6;

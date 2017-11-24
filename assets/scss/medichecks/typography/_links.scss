@@ -1,0 +1,117 @@
+$hoverEffectTime: 0.12s;
+.content {
+    /** Default styling **/
+    a {
+        color: $clrBrand1;
+
+        &:focus,
+        &:hover {
+            color: $clrBrand1Dark;            
+            text-decoration: none;
+        }
+        &:focus::after,
+        &:hover::after {
+            border-bottom-color: $clrBrand1Dark; 
+        }
+
+        /** Secondary links **/
+        &.secondary {
+            color: $clrBlack;
+            &:focus,
+            &:hover {
+                color: $clrBrand1;
+            }
+            &:focus::after,
+            &:hover::after {
+                border-bottom-color: $clrBrand1; 
+            }
+        }
+
+        /** Tertiary links **/
+        &.tertiary {
+            color: $clrGrey20;
+            &:focus,
+            &:hover {
+                color: $clrBrand1;
+            }
+            &:focus::after,
+            &:hover::after {
+                border-bottom-color: $clrBrand1; 
+            }
+        }
+
+        /** Link to another website **/
+        &.offsite {
+            color: $clrGrey20;
+            &:focus,
+            &:hover {
+                color: $clrBrand1;
+            }
+            &:focus::after,
+            &:hover::after {
+                border-color: $clrBrand1;                                 
+            }
+
+            // Icon
+            &:before {
+                position: absolute;
+                content: " ";
+                top: 0.1rem;
+                right: -0.4rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-top: 2px solid $clrGrey20;
+                border-right: 2px solid $clrGrey20;
+                transition: 
+                    border-color 0.6s, 
+                    top $hoverEffectTime, 
+                    right $hoverEffectTime;
+            }
+
+            &:focus::before,
+            &:hover::before {
+                border-color: $clrBrand1;   
+                transition: 
+                    border-color $hoverEffectTime, 
+                    top $hoverEffectTime, 
+                    right $hoverEffectTime;
+            }
+        }
+    }
+
+    /** Rollover effect **/
+    a {
+        transition: color 0.6s;
+        position: relative;
+
+        &:hover {        
+            transition: color 0.05s;
+        }
+
+        &::after {
+            box-sizing: inherit;
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;        
+            bottom: 0;
+            right: 50%;
+            border-bottom: 1px solid transparent;
+
+            transition:
+                right $hoverEffectTime ease-out,
+                border-color 0s ease-out $hoverEffectTime,
+                width $hoverEffectTime ease-out;
+        }
+
+        &:focus::after,
+        &:hover::after {
+            width: 100%;
+            height: 100%;            
+            right: 0;            
+            transition:
+                right $hoverEffectTime ease-out,
+                width $hoverEffectTime ease-out;
+        } 
+    }
+}
