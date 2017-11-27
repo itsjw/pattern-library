@@ -1,0 +1,35 @@
+.form {
+    .options {
+        @include m('radio') {            
+            input {
+                /** Hide default input and replace with aniation label **/
+                position: absolute;
+                left: -9999px;
+                + label {
+                    &:before {
+                        content: " ";
+                        left: 1rem;
+                        width: 1.0rem;
+                        height: 1.0rem;
+                        border: 0.15rem solid #777;
+                        border-radius: 0.55rem;
+                        margin-top: 0.25rem;
+
+                        transition: box-shadow 0.4s, background 0.2s, border 0.4s, transform 0.4s;
+                    }
+                }
+                &:checked + label {
+                    &:before {
+                        border-color: #fff;
+                        background-color: $clrBrand2;
+                        box-shadow: 0px 0 0px 0.15rem $clrBrand2;
+                        transition: box-shadow 0.3s, background 0.2s, border 0.4s, transform 0.4s;
+                    }
+                }
+                &:focus + label {                    
+                    background-color: $clrGrey50;
+                }
+            }
+        }
+    }
+}

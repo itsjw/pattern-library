@@ -1,0 +1,8 @@
+.bg {
+    @include m('pink') {
+        background-color: $clrBrand1;
+    }
+    @include m('blue') {
+        background-color: $clrBrand2;
+    }
+}

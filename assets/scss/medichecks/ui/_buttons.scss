@@ -58,59 +58,55 @@
 /** Colours **/
 .btn {
     background-color: $clrBrand1;
-    color: $colorWhite;
+    color: $clrWhite;
 
     &:hover {
-        background-color: lighten($clrBrand1, 10%);
-        color: $colorWhite;
+        background-color: $clrBrand1Light;
+        color: $clrWhite;
     }
 
     &:active, &:focus {
-        color: $colorWhite;
+        color: $clrWhite;
     }
 
     @include m('secondary') {
-        background-color: $colorWhite;        
+        background-color: $clrWhite;        
         border-style: solid;
         border-color: $clrBrand1;
         color: $clrBrand1;
 
+        &:hover {
+            background-color: $clrGrey60;
+            border-color: $clrBrand1Dark;
+            color: $clrBrand1Dark;
+        }
+
         &:active, &:focus {
-            color: $colorBlack;
+            color: $clrBrand1Dark;
         }
     }
 
     @include m('blue') {
         background-color: $clrBrand2;
         &:hover {
-            background-color: lighten($clrBrand2, 15%); 
+            background-color: $clrBrand2Light;
         }
-        @include m('secondary') {
+
+        &.btn--secondary {
+            border-style: solid;
             border-color: $clrBrand2;
-            background-color: $colorWhite;
+            background-color: $clrWhite;
             color: $clrBrand2;
+            &:hover {
+                background-color: $clrGrey60;
+                border-color: $clrBrand2Dark;
+                color: $clrBrand2Dark;
+            }
+            &:active, &:focus {
+                color: $clrBrand2Dark;
+            }
         }
     }
-
-    @include m('disabled') {
-        background-color: $colorDisabledDark;
-        color: $colorDisabledLight;
-        pointer-events: none;
-
-        &:hover {
-            background-color: $colorDisabledDark;
-            color: $colorDisabledLight;
-        }
-    }
-    &:disabled {
-        background-color: $colorDisabledDark;
-        color: $colorDisabledLight;
-
-        &:hover {
-            background-color: $colorDisabledDark;
-        }
-    }
-
 }
 
 /** Effects **/
@@ -118,7 +114,7 @@
     box-shadow: 0px 3px 3.8px 0.2px rgba(0, 0, 0, 0.3);
 }
 
-/** Textlink **/
+/** Buttons that look like text links **/
 .btn {
     @include m('text') {
         display: inline-block;
@@ -128,15 +124,47 @@
 
         &:focus,
         &:hover {
-            color: $clrBrand1;
+            background-color: transparent;
+            // color: $clrBrand1;
             text-decoration: underline;
             transition: color 0.05s;
         }
 
-        @include m('blue') {
-            color: $clrBrand2;
+        &.btn--pink {
+            color: $clrBrand1;
+        }
+        &.btn--blue {
+            color: $clrBrand2;        
         }
     }
+}
+
+/** Disabled button overrides all other styles if defined **/
+.btn {
+    @include m('disabled') {        
+        background-color: $clrDisabledLight;        
+        color: $clrDisabledDark;
+        box-shadow: none;
+        border-color: $clrDisabledLight;
+        pointer-events: none; 
+
+        &:hover {
+            background-color: $clrDisabledLight;
+            color: $clrDisabledDark;
+        }
+    }
+    &:disabled {
+        background-color: $clrDisabledLight;
+        color: $clrDisabledDark;
+        box-shadow: none;
+        pointer-events: none;
+
+        &:hover {
+            background-color: $clrDisabledLight;
+            color: $clrDisabledDark;
+        }
+    }
+
 }
 
 /** Exceptions **/

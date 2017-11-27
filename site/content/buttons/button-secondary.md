@@ -17,3 +17,15 @@ Alternative styling, used as a lower priority than the default button style.
 <button type="button" class="btn btn--secondary">Button</button>
 {{% /column %}}
 {{< /row >}}
+
+{{< row >}}
+{{% column cols="8" %}}
+
+{{< highlight html >}}
+<button type="button" class="btn btn--secondary btn--blue">Button</button>
+{{< /highlight >}}
+{{% /column %}}
+{{% column cols="4" %}}
+<button type="button" class="btn btn--secondary btn--blue">Button</button>
+{{% /column %}}
+{{< /row >}}

@@ -1,5 +1,6 @@
 ---
 title: Text types
+desc: Different text types
 tags: ["text", "structure"]
 ---
 Here are the different text types you should use.
@@ -9,6 +10,16 @@ Here are the different text types you should use.
 <p class="txt--bold">Bold copy using the .txt--bold</p>
 
 **Or by using the &lt;b&gt; tag**
+
+---------------
+
+For special offers, present the old price with a through using the &lt;del&gt; and the new price alongside e.g.
+
+<span class="txt--lg txt--blue--light"><del>&pound;50</del></span> <span class="txt--lg txt--blue">&pound;40</span>
+
+{{< highlight html >}}
+<span class="txt--lg txt--blue--light"><del>&pound;50</del></span> <span class="txt--lg txt--blue">&pound;40</span>
+{{< /highlight >}}
 
 ---------------
 

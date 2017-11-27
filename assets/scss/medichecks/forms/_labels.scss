@@ -1,0 +1,80 @@
+.form {
+    label {
+        color: $clrTextDefault;
+        font-weight: normal;
+        font-size: 16px;
+        text-align: left;
+        white-space: normal;
+        display: inline-block;
+        border: 1px solid transparent;
+
+        &:hover {
+            border-color: $clrGrey10;
+            transition: border 0.1s;
+        }
+        &:before, &:after {
+            position: absolute;
+        }
+
+        &.selectable {
+            display: inline-block;
+            position: relative;
+            padding: 0.75rem;
+            margin-right: 2rem;
+            padding-left: 3rem;
+            border-radius: 0.4rem;
+            border: 1px solid transparent;
+            color: #777;
+            cursor: pointer;
+
+            transition: color 0.3s, background-color 0.3s, fill 0.2s, border 0.2s;
+
+            &:hover {
+                color: $clrTextDefault;
+                border-color: $clrBrand2Light;
+                transition: color 0.05s, background-color 0.05s, fill 0.05s, border 0.05s;
+            }
+
+            &:active {
+                color: $clrTextDefault;
+                background-color: $clrGrey50;
+                transition: color 0.05s, background-color 0.05s, fill 0.05s, border 0.05s;
+            }
+        }
+
+        /* Labels when using icons */
+        .icon {
+            svg {
+                height: 68px;
+            }
+        }
+    }
+
+    .option {
+        @include e('input') {
+            &:checked {
+                + label {
+                    // Selected
+                    transition: color 0.2s, border 0.6s, background-color 0.4s, transform 0.4s;
+
+                    &:hover {
+                        color: $clrTextDefault;
+                    }
+
+                    &:before {
+                        background-color: $clrGrey10;
+                    }
+                    &:hover {
+                        transition: border 0.1s;
+                    }
+
+                    .label__icon {
+                        svg path {
+                            fill: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.form {
+    .options {
+        @include m('icons') {
+            padding: 0 5%;
+        }
+    
+        .option {
+            display: inline-block;
+            margin: 0.5rem;
+            min-width: 100px;
+
+            @include e('input') {
+                display: none;
+                &:checked {
+                    //color: $DBColorBlue;
+                }
+            }
+
+            @include e('icon') {
+                width: 20%;
+                margin: 1rem;
+            }
+        }
+    }
+}

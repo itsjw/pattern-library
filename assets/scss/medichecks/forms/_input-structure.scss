@@ -1,0 +1,57 @@
+.form {
+    /* Form element container */
+    .input {
+        @include e('container') {
+            width: auto;
+            max-width: 100%;
+
+            @include m('inline') {
+                display: inline-block;
+
+                label, input {
+                    width: auto;
+                }
+            }
+
+            @include m('xs') {
+                max-width: 90px;
+            }
+            @include m('sm') {
+                max-width: 120px;
+            }
+            @include m('md') {
+                max-width: 160px;
+            }
+            @include m('lg') {
+                max-width: 240px;
+            }
+        }
+    }
+
+    /** Form label **/
+    .label {
+        @include m('selectable') {
+            display: flex;
+            flex-basis: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include m('inline') {
+            display: inline-block;;
+        }
+    }
+
+
+    /** Form input field **/
+    .input {
+        display: block;
+        width: 100%;
+
+        @include m('inline') {
+            display: inline-block;
+        }
+    }
+
+
+}
