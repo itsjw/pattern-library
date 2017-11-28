@@ -43,7 +43,32 @@ tags: ["forms","ui"]
             <input type="number" placeholder="YYYY">
         </div>
     </div>
-    <div class="form__question">
+    <button class="btn">Submit</button>
+</form>
 
+<hr>
+
+<form class="form">
+    <h4>Form that cannot be submitted yet</h4>
+
+    <div class="form__question">
+        <div class="question__text">When were you born?</div>
+
+        <div class="input__container input__container--xs input__container--inline">
+            <input type="number" placeholder="DD">
+        </div>
+        <div class="input__container input__container--xs input__container--inline">
+            <select>
+                <option>1995</option>
+                <option>1996</option>
+                <option>1997</option>
+                <option>1998</option>
+                <option>1999</option>
+            </select>
+        </div>
+        <div class="input__container input__container--xs input__container--inline">
+            <input type="number" placeholder="YYYY">
+        </div>
     </div>
+    <button class="btn" disabled="disabled">Submit</button>
 </form>

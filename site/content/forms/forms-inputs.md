@@ -1,5 +1,5 @@
 ---
-title: Input fields
+title: Form input fields
 tags: ["forms", "input-types"]
 ---
 ### Default form input styles
@@ -117,10 +117,38 @@ Form elements will use browser defaults unless the ***.form*** class is declared
 <form class="form">
     <h4>Select box</h4>
 
-    <select>
-        <option>Hooley</option>
-        <option>Dooley</option>
-        <option>Wooley</option>
-        <option>Booley</option>
-    </select>
+    <div class="input__container">
+        <select>
+            <option>Horse</option>
+            <option>Banana</option>
+            <option>Cake</option>
+        </select>
+    </div>
+    {{< highlight html >}}
+    <div class="input__container">
+        <select>
+            <option>Horse</option>
+            <option>Banana</option>
+            <option>Cake</option>
+        </select>
+    </div>
+    {{< /highlight >}}
+    <hr>
+    <div class="input__container">
+        <select disabled="disabled">
+            <option>Horse</option>
+            <option>Banana</option>
+            <option>Cake</option>
+        </select>
+    </div>
+    {{< highlight html >}}
+    <div class="input__container">
+        <select disabled="disabled">
+            <option>Horse</option>
+            <option>Banana</option>
+            <option>Cake</option>
+        </select>
+    </div>
+    {{< /highlight >}}
 </form>
+

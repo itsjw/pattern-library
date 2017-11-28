@@ -23,3 +23,6 @@ Badges are used to draw attention to an important bit of supplementary informati
 <div class="bg--blue pad--sm">
     <span class="badge">A badge on a blue background</span>
 </div>
+<div class="bg--green pad--sm">
+    <span class="badge">A badge on a blue background</span>
+</div>

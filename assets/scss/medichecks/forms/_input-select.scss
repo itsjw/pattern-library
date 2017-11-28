@@ -1,12 +1,8 @@
-.formMC {
-    .input {
-        @include modifier('select') {
-            padding-top: 0.62rem;
-            padding-bottom: 0.62rem;
-
-            .select__option {
-
-            }
-        }
+.form {
+    select {        
+        padding-top: 0.62rem;
+        padding-bottom: 0.62rem;
+        border: 1px solid $clrGrey50;
+        background-color: $clrGrey60;
     }
 }
